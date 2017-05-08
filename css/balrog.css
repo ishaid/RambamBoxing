@@ -1,0 +1,107 @@
+.balrog {
+  position: absolute;
+  bottom: 112px;
+  margin-left: 580px;
+  width: 70px;
+  height: 80px;
+  background-image:
+  url(../images/balrog.png);
+  transform: scale(2);
+  -webkit-image-rendering: pixelated; -moz-image-rendering: pixelated; -ms-image-rendering: pixelated; image-rendering: pixelated;
+}
+
+.balrog:before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  bottom: -2px;
+  left: 17px; right: 17px;
+  height: 6px;
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; border-radius: 50%;
+  -webkit-box-shadow: 0 0 5px; -moz-box-shadow: 0 0 5px; -ms-box-shadow: 0 0 5px; box-shadow: 0 0 5px;
+}
+
+.flip {
+  -webkit-transform: scale(-2,2); -moz-transform: scale(-2,2); -ms-transform: scale(-2,2); transform: scale(-2,2);
+}
+
+
+/* balrog-stance */
+.balrog-stance { -webkit-animation: balrog-stance steps(4) 0.5s infinite; -moz-animation: balrog-stance steps(4) 0.5s infinite; -ms-animation: balrog-stance steps(4) 0.5s infinite; animation: balrog-stance steps(4) 0.5s infinite; }
+
+@-webkit-keyframes balrog-stance { from { background-position: 0px -80px; }
+  to { background-position: -280px -80px; } }
+
+@-moz-keyframes balrog-stance { from { background-position: 0px -80px; }
+  to { background-position: -280px -80px; } }
+
+@-ms-keyframes balrog-stance { from { background-position: 0px -80px; }
+  to { background-position: -280px -80px; } }
+
+@keyframes balrog-stance { from { background-position: 0px -80px; }
+  to { background-position: -280px -80px; } }
+
+
+/* balrog-punch */
+.balrog-punch { -webkit-animation: balrog-punch steps(3) 0.15s infinite; -moz-animation: balrog-punch steps(3) 0.15s infinite; -ms-animation: balrog-punch steps(3) 0.15s infinite; animation: balrog-punch steps(3) 0.15s infinite; }
+
+@-webkit-keyframes balrog-punch { from { background-position: 0px -160px; }
+  to { background-position: -210px -160px; } }
+
+@-moz-keyframes balrog-punch { from { background-position: 0px -160px; }
+  to { background-position: -210px -160px; } }
+
+@-ms-keyframes balrog-punch { from { background-position: 0px -160px; }
+  to { background-position: -210px -160px; } }
+
+@keyframes balrog-punch { from { background-position: 0px -160px; }
+  to { background-position: -210px -160px; } }
+
+/* balrog-walking */
+.balrog-walk { -webkit-animation: balrog-walk steps(4) 0.5s infinite; -moz-animation: balrog-walk steps(4) 0.5s infinite; -ms-animation: balrog-walk steps(4) 0.5s infinite; animation: balrog-walk steps(4) 0.5s infinite; }
+
+@-webkit-keyframes balrog-walk { from { background-position: 0px -240px; }
+  to { background-position: -280px -240px; } }
+
+@-moz-keyframes balrog-walk { from { background-position: 0px -240px; }
+  to { background-position: -280px -240px; } }
+
+@-ms-keyframes balrog-walk { from { background-position: 0px -240px; }
+  to { background-position: -280px -240px; } }
+
+@keyframes balrog-walk { from { background-position: 0px -240px; }
+  to { background-position: -280px -240px; } }
+
+/* balrog-kick */
+.balrog-kick { -webkit-animation: balrog-kick steps(3) 0.5s infinite; -moz-animation: balrog-kick steps(3) 0.5s infinite; -ms-animation: balrog-kick steps(3) 0.5s infinite; animation: balrog-kick steps(3) 0.5s infinite; }
+
+@-webkit-keyframes balrog-kick { from { background-position: 0px -480px; }
+  to { background-position: -210px -480px; } }
+
+@-moz-keyframes balrog-kick { from { background-position: 0px -480px; }
+  to { background-position: -210px -480px; } }
+
+@-ms-keyframes balrog-kick { from { background-position: 0px -480px; }
+  to { background-position: -210px -480px; } }
+
+@keyframes balrog-kick { from { background-position: 0px -480px; }
+  to { background-position: -210px -480px; } }
+
+
+
+/* balrog-jump */
+.balrog-jump { -webkit-transition: bottom 0.5s cubic-bezier(0.99, 0.005, 0, 0.42); -moz-transition: bottom 0.5s cubic-bezier(0.99, 0.005, 0, 0.42); -ms-transition: bottom 0.5s cubic-bezier(0.99, 0.005, 0, 0.42); transition: bottom 0.5s cubic-bezier(0.99, 0.005, 0, 0.42); bottom: 225px; -webkit-animation: balrog-jump steps(5) 1s infinite; -moz-animation: balrog-jump steps(5) 1s infinite; -ms-animation: balrog-jump steps(5) 1s infinite; animation: balrog-jump steps(5) 1s infinite; }
+.balrog-jump.down { bottom: 112px; }
+
+@-webkit-keyframes balrog-jump { from { background-position: 0px -400px; }
+  to { background-position: -350px -400px; } }
+
+@-moz-keyframes balrog-jump { from { background-position: 0px -400px; }
+  to { background-position: -350px -400px; } }
+
+@-ms-keyframes balrog-jump { from { background-position: 0px -400px; }
+  to { background-position: -350px -400px; } }
+
+@keyframes balrog-jump { from { background-position: 0px -400px; }
+  to { background-position: -350px -400px; } }

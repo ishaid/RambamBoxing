@@ -1,0 +1,248 @@
+@import url(http://fonts.googleapis.com/css?family=Bangers);
+.key {
+  display: inline-block;
+  color: #000000;
+  font: normal 9pt arial;
+  cursor: pointer;
+  line-height: 19px;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: top;
+  width: 30px; height: 20px;
+  margin: 0 5px 0;
+  background: #eff0f2;
+  border-top: 1px solid #f5f5f5;
+  text-shadow: 0px 1px 0px #f5f5f5;
+  -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; border-radius: 4px;
+  -webkit-box-shadow: inset 0 0 25px #e8e8e8, 0 1px 0 #c3c3c3, 0 2px 0 #c9c9c9, 0 2px 3px #333333;
+  -moz-box-shadow: inset 0 0 25px #e8e8e8, 0 1px 0 #c3c3c3, 0 2px 0 #c9c9c9, 0 2px 3px #333333;
+  box-shadow: inset 0 0 25px #e8e8e8, 0 1px 0 #c3c3c3, 0 2px 0 #c9c9c9, 0 2px 3px #333333;
+}
+
+.button {
+  display: inline-block;
+  color: #000000;
+  font-family: "Bangers", cursive, Arial;
+  font-size: 30px;
+  letter-spacing: 0.75px;
+  cursor: pointer;
+  line-height: 19px;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: center;
+  width: auto; height: auto;
+  padding: 5px 10px 5px 10px;
+  background: #eff0f2;
+  border-top: 1px solid #f5f5f5;
+  text-shadow: 0px 1px 0px #f5f5f5;
+  -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; border-radius: 4px;
+  -webkit-box-shadow: inset 0 0 25px #e8e8e8, 0 1px 0 #c3c3c3, 0 2px 0 #c9c9c9, 0 2px 3px #333333;
+  -moz-box-shadow: inset 0 0 25px #e8e8e8, 0 1px 0 #c3c3c3, 0 2px 0 #c9c9c9, 0 2px 3px #333333;
+  box-shadow: inset 0 0 25px #e8e8e8, 0 1px 0 #c3c3c3, 0 2px 0 #c9c9c9, 0 2px 3px #333333;
+}
+
+.key.red {
+  background: #ff394b;
+  border-top: 1px solid #ff263b;
+  text-shadow: 0px 1px 0px #ff263b;
+  -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; border-radius: 4px;
+  -webkit-box-shadow: inset 0 0 25px #ff6a6a, 0 1px 0 #cf192e, 0 2px 0 #c41616, 0 2px 3px #333333;
+  -moz-box-shadow: inset 0 0 25px #ff6a6a, 0 1px 0 #cf192e, 0 2px 0 #c41616, 0 2px 3px #333333;
+  box-shadow: inset 0 0 25px #ff6a6a, 0 1px 0 #cf192e, 0 2px 0 #c41616, 0 2px 3px #333333;
+}
+
+.key.blue {
+  background: #007dff;
+  border-top: 1px solid #00baff;
+  text-shadow: 0px 1px 0px #00baff;
+  -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; border-radius: 4px;
+  -webkit-box-shadow: inset 0 0 25px #55c2ff, 0 1px 0 #00a5e2, 0 2px 0 #2666c7, 0 2px 3px #333333;
+  -moz-box-shadow: inset 0 0 25px #55c2ff, 0 1px 0 #00a5e2, 0 2px 0 #2666c7, 0 2px 3px #333333;
+  box-shadow: inset 0 0 25px #55c2ff, 0 1px 0 #00a5e2, 0 2px 0 #2666c7, 0 2px 3px #333333;
+}
+
+
+.key:active {
+  color: #888;
+  background: #ebeced;
+  top: 3px;
+  position: relative;
+  margin: 0px 5px 0px;
+  border-top: 1px solid #eee;
+  -webkit-box-shadow: inset 0 0 25px #dddddd, 0 0 3px #333333; -moz-box-shadow: inset 0 0 25px #dddddd, 0 0 3px #333333; box-shadow: inset 0 0 25px #dddddd, 0 0 3px #333333;
+}
+
+.key.red:active {
+  color: #000000;
+  background: #f52727;
+  top: 3px;
+  position: relative;
+  margin: 0px 5px 0px;
+  border-top: 1px solid #e70000;
+  -webkit-box-shadow: inset 0 0 25px #db0000, 0 0 3px #333333; -moz-box-shadow: inset 0 0 25px #db0000, 0 0 3px #333333; box-shadow: inset 0 0 25px #db0000, 0 0 3px #333333;
+}
+
+.key.blue:active {
+  color: #000000;
+  background: #008cff;
+  top: 3px;
+  position: relative;
+  margin: 0px 5px 0px;
+  border-top: 1px solid #007dff;
+  -webkit-box-shadow: inset 0 0 25px #008cff, 0 0 3px #333333; -moz-box-shadow: inset 0 0 25px #008cff, 0 0 3px #333333; box-shadow: inset 0 0 25px #008cff, 0 0 3px #333333;
+}
+
+.stage, .stage * {
+  /*outline: 2px solid pink;*/
+}
+
+body {
+  background-color: #ececec;
+  margin: 0;
+}
+
+.stage {
+  text-align: center;
+  width: 768px; height: 576px;
+  margin: 0 auto;
+  margin-top: 20px;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  -webkit-border-radius: 10px 10px 0 0; -moz-border-radius: 10px 10px 0 0; -ms-border-radius: 10px 10px 0 0; border-radius: 10px 10px 0 0;
+}
+
+.stage.level1 {
+  background: url(../images/bg1.jpg) no-repeat 0px 0px;
+  background-size: contain;
+}
+
+.stage.level2 {
+  background: url(../images/bg2.jpg) no-repeat 0px 0px;
+  background-size: contain;
+}
+
+.pause {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  width: 20px; height: 20px;
+  background: rgba(255, 255, 255, 0.4) url(../images/play-pause-white.png) no-repeat left top;
+  -webkit-border-radius: 100%; -moz-border-radius: 100%; -ms-border-radius: 100%; border-radius: 100%;
+  cursor: pointer;
+}
+
+.pause.play {
+  background-position:
+  left bottom;
+}
+
+.commands {
+  margin-top: 20px;
+  padding: 10px;
+  width: 768px;
+  margin: 0 auto;
+  background-color: #fff;
+  font-family: "Bangers", cursive, Arial;
+  font-size: 20px;
+  -webkit-border-radius: 0 0 10px 10px; -moz-border-radius: 0 0 10px 10px; -ms-border-radius: 0 0 10px 10px; border-radius: 0 0 10px 10px;
+  -webkit-box-shadow: inset 0 5px 15px rgba(0, 0, 0, 0.4); -moz-box-shadow: inset 0 5px 15px rgba(0, 0, 0, 0.4); box-shadow: inset 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.button:hover {
+  background-color:  #e4e4e4;
+}
+
+.boldred {
+  color: #f52727;
+  letter-spacing: 1.25px;
+}
+
+.boldblue {
+  color: #008cff;
+  letter-spacing: 1.25px;
+}
+
+.health-bar {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 150px;
+  height: 10px;
+  background: #ddd;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.bar.red {
+  background: #f52727;
+  width: 100%;
+  height: 10px;
+  position: relative;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+
+  transition: width .5s linear;
+}
+
+.bar.blue {
+  background: #008cff;
+  width: 100%;
+  height: 10px;
+  position: relative;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+
+  transition: width .5s linear;
+}
+
+/*.ui-dialog-titlebar {
+  background-color: #008cff;
+  background-image: none;
+  color: #000;
+}*/
+.ui-dialog {
+  direction: rtl;
+}
+
+.ui-dialog-titlebar.blue {
+  background-color: #008cff;
+  background-image: none;
+  color: #000;
+}
+
+.ui-dialog-titlebar.red {
+  background-color: #f52727;
+  background-image: none;
+  color: #000;
+}
+
+.ui-dialog-titlebar-close {
+    visibility: hidden;
+}
+
+.ui-dialog-buttonpane.blue {
+	background-color: #008cff;
+	background-image: none;
+  color: #000;
+}
+
+.topbar {
+  text-align: center;
+  width: 125px; height: 40px;
+  margin: 0 auto;
+  background-color: #fff;
+  font-family: "Bangers", Arial;
+  font-size: 20px;
+  -webkit-border-radius: 0 0 15px 15px; -moz-border-radius: 0 0 15px 15px; -ms-border-radius: 0 0 15px 15px; border-radius: 0 0 15px 15px;
+  -webkit-box-shadow: inset 0 5px 15px rgba(0, 0, 0, 0.4); -moz-box-shadow: inset 0 5px 15px rgba(0, 0, 0, 0.4); box-shadow: inset 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+
+
+
+/*.flip {
+  -webkit-transform: scaleX(-2); -moz-transform: scaleX(-2); -ms-transform: scaleX(-2); transform: scaleX(-2);
+}*/

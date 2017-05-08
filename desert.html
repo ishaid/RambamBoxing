@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" type="image/png" href="images/favi.png">
+    <meta charset="utf-8">
+    <title>Waterless friends dilema</title>
+    <link rel="stylesheet" href="js/jquery/jquery-ui-1.12.1/jquery-ui.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/ken.css">
+    <link rel="stylesheet" href="css/balrog.css">
+  </head>
+  <body onload="$('#start-dialog').dialog('open'); timer = new Timer('timer', 210, 1);">
+
+    <div class="stage level1">
+        <table class="topbar">
+          <td><div id="timer" class="timer" ></div>
+        </table>
+        <div class="ken ken-stance"></div>
+        <div class="balrog balrog-stance flip"></div>
+
+        <a class="pause"></a>
+    </div>
+
+    <table class="commands">
+        <tr>
+            <td>Ken aka &nbsp;&nbsp; <b class="boldred">Rabi Akiva</b>
+            <td><div class="health-bar" id="ken-health"><div class="bar red"></div><div class="hit red"></div></div>
+            <td>Balrog aka &nbsp;&nbsp; <b class="boldblue">Ben Patroa</b>
+            <td><div class="health-bar" id="balrog-health"><div class="bar blue"></div><div class="hit"></div></div>
+        <tr>
+            <td>Punch  <span class="key red" id="g">g</span>
+            <td>Jump  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="key red" id="w">w</span>
+            <td>Punch  <span class="key blue" id="p">p</span>
+            <td>Jump  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="key blue" id="up">▲</span>
+        <tr>
+            <td>Kick <span class="key red" id="h">h</span>
+            <td>Walk <span class="key red" id="a">a</span> <span class="key red" id="d">d</span> <!--▲▼◀►-->
+            <td>Elbow <span class="key blue" id="o">o</span>
+            <td>Walk <span class="key blue" id="left">◀</span> <span class="key blue" id="right">►</span> <!--▲▼◀►-->
+        <tr>
+            <!-- <td>Hadoken <span class="key" id="s">s</span>-->
+            <!-- <td>Tatsumaki Senpuu Kyaku <span class="key" id="q">q</span> -->
+            <!-- <td>Kneel &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="key" id="down">▼</span>-->
+        <tr>
+            <td>
+            <td>
+            <td>
+    </table>
+
+    <div id="dialog" class="ui-dialog blue"></div>
+    <div id="start-dialog" class="ui-dialog"></div>
+
+    <script src="js/jquery/jquery-3.2.1.js"></script>
+    <script src="js/jquery/jquery-ui-1.12.1/jquery-ui.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/level1/level.js"></script>
+    <script src="js/level1/keys.js"></script>
+
+  </body>
+</html>

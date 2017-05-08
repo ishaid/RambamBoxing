@@ -1,0 +1,131 @@
+@import url(http://fonts.googleapis.com/css?family=Bangers);
+.key { display: inline-block; color: #aaa; font: normal 9pt arial; cursor: pointer; line-height: 19px; text-decoration: none; text-align: center; vertical-align: top; width: 30px; height: 20px; margin: 0 5px 0; background: #eff0f2; border-top: 1px solid #f5f5f5; text-shadow: 0px 1px 0px #f5f5f5; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; border-radius: 4px; -webkit-box-shadow: inset 0 0 25px #e8e8e8, 0 1px 0 #c3c3c3, 0 2px 0 #c9c9c9, 0 2px 3px #333333; -moz-box-shadow: inset 0 0 25px #e8e8e8, 0 1px 0 #c3c3c3, 0 2px 0 #c9c9c9, 0 2px 3px #333333; box-shadow: inset 0 0 25px #e8e8e8, 0 1px 0 #c3c3c3, 0 2px 0 #c9c9c9, 0 2px 3px #333333; }
+.key:active { color: #888; background: #ebeced; top: 3px; position: relative; margin: 0px 5px 0px; border-top: 1px solid #eee; -webkit-box-shadow: inset 0 0 25px #dddddd, 0 0 3px #333333; -moz-box-shadow: inset 0 0 25px #dddddd, 0 0 3px #333333; box-shadow: inset 0 0 25px #dddddd, 0 0 3px #333333; }
+
+.stage, .stage * { /*outline: 2px solid pink;*/ }
+
+body { background-color: #444444; margin: 0;}
+
+.stage { width: 768px; height: 576px; margin: 0 auto; margin-top: 20px; overflow: hidden; position: relative; z-index: 0; background: url(../images/bg1.jpg) no-repeat 0px 0px; background-size: contain; -webkit-border-radius: 10px 10px 0 0; -moz-border-radius: 10px 10px 0 0; -ms-border-radius: 10px 10px 0 0; border-radius: 10px 10px 0 0; }
+
+.pause { position: absolute; right: 5px; bottom: 5px; width: 20px; height: 20px; background: rgba(255, 255, 255, 0.4) url(../images/play-pause-white.png) no-repeat left top; -webkit-border-radius: 100%; -moz-border-radius: 100%; -ms-border-radius: 100%; border-radius: 100%; cursor: pointer; }
+.pause.play { background-position: left bottom; }
+
+.commands { margin-top: 20px; padding: 10px; width: 768px; margin: 0 auto; background-color: #fff; font-family: "Bangers", cursive, Arial; font-size: 20px; -webkit-border-radius: 0 0 10px 10px; -moz-border-radius: 0 0 10px 10px; -ms-border-radius: 0 0 10px 10px; border-radius: 0 0 10px 10px; -webkit-box-shadow: inset 0 5px 15px rgba(0, 0, 0, 0.4); -moz-box-shadow: inset 0 5px 15px rgba(0, 0, 0, 0.4); box-shadow: inset 0 5px 15px rgba(0, 0, 0, 0.4); }
+.flip { -webkit-transform: scaleX(-1); -moz-transform: scaleX(-1); -ms-transform: scaleX(-1); transform: scaleX(-1); }
+
+
+
+
+
+
+
+.ken, .fireball { position: absolute; bottom: 70px; margin-left: 70px; width: 70px; height: 80px; background-image: url(../images/ken.png); -webkit-transform: scale(2); -moz-transform: scale(2); -ms-transform: scale(2); transform: scale(2);}
+.ken:before, .fireball:before { content: ''; z-index: -1; position: absolute; bottom: -2px; left: 17px; right: 17px; height: 6px; background-color: rgba(0, 0, 0, 0.8); -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; border-radius: 50%; -webkit-box-shadow: 0 0 5px; -moz-box-shadow: 0 0 5px; box-shadow: 0 0 5px; }
+
+/* ken's fireball */
+.fireball { position: absolute; left: 100%; bottom: 0px; margin-left: 0; background-position: 140px 320px; -webkit-transition: margin 6s linear; -moz-transition: margin 6s linear; -ms-transition: margin 6s linear; transition: margin 6s linear; -webkit-animation: fireball steps(2) 0.15s infinite; -moz-animation: fireball steps(2) 0.15s infinite; -ms-animation: fireball steps(2) 0.15s infinite; animation: fireball steps(2) 0.15s infinite; }
+.fireball:before { left: 25px; right: 25px; }
+.fireball.moving { margin-left: 2000px; }
+
+@-webkit-keyframes fireball { from { background-position: 0px -320px; }
+  to { background-position: -140px -320px; } }
+
+@-moz-keyframes fireball { from { background-position: 0px -320px; }
+  to { background-position: -140px -320px; } }
+
+@-ms-keyframes fireball { from { background-position: 0px -320px; }
+  to { background-position: -140px -320px; } }
+
+@keyframes fireball { from { background-position: 0px -320px; }
+  to { background-position: -140px -320px; } }
+
+/* ken's fireball impact explosion */
+.explode { -webkit-animation: explode steps(4) 0.5s 1; -moz-animation: explode steps(4) 0.5s 1; -ms-animation: explode steps(4) 0.5s 1; animation: explode steps(4) 0.5s 1; }
+
+@-webkit-keyframes explode { from { background-position: 0px -400px; }
+  to { background-position: -280px -400px; } }
+
+@-moz-keyframes explode { from { background-position: 0px -400px; }
+  to { background-position: -280px -400px; } }
+
+@-ms-keyframes explode { from { background-position: 0px -400px; }
+  to { background-position: -280px -400px; } }
+
+@keyframes explode { from { background-position: 0px -400px; }
+  to { background-position: -280px -400px; } }
+
+/* ken-stance */
+.ken-stance { -webkit-animation: ken-stance steps(4) 0.5s infinite; -moz-animation: ken-stance steps(4) 0.5s infinite; -ms-animation: ken-stance steps(4) 0.5s infinite; animation: ken-stance steps(4) 0.5s infinite; }
+
+@-webkit-keyframes ken-stance { from { background-position: 0px -80px; }
+  to { background-position: -280px -80px; } }
+
+@-moz-keyframes ken-stance { from { background-position: 0px -80px; }
+  to { background-position: -280px -80px; } }
+
+@-ms-keyframes ken-stance { from { background-position: 0px -80px; }
+  to { background-position: -280px -80px; } }
+
+@keyframes ken-stance { from { background-position: 0px -80px; }
+  to { background-position: -280px -80px; } }
+
+/* hadoken - must be declared AFTER .ken-stance */
+.hadoken { -webkit-animation: hadoken steps(4) 0.5s infinite; -moz-animation: hadoken steps(4) 0.5s infinite; -ms-animation: hadoken steps(4) 0.5s infinite; animation: hadoken steps(4) 0.5s infinite; }
+
+@-webkit-keyframes hadoken { from { background-position: 0px 0px; }
+  to { background-position: -280px 0px; } }
+
+@-moz-keyframes hadoken { from { background-position: 0px 0px; }
+  to { background-position: -280px 0px; } }
+
+@-ms-keyframes hadoken { from { background-position: 0px 0px; }
+  to { background-position: -280px 0px; } }
+
+@keyframes hadoken { from { background-position: 0px 0px; }
+  to { background-position: -280px 0px; } }
+
+/* ken-punch */
+.ken-punch { -webkit-animation: ken-punch steps(3) 0.15s infinite; -moz-animation: ken-punch steps(3) 0.15s infinite; -ms-animation: ken-punch steps(3) 0.15s infinite; animation: ken-punch steps(3) 0.15s infinite; }
+
+@-webkit-keyframes ken-punch { from { background-position: 0px -320px; }
+  to { background-position: -420px -320px; } }
+
+@-moz-keyframes ken-punch { from { background-position: 0px -320px; }
+  to { background-position: -420px -320px; } }
+
+@-ms-keyframes ken-punch { from { background-position: 0px -320px; }
+  to { background-position: -420px -320px; } }
+
+@keyframes ken-punch { from { background-position: 0px -320px; }
+  to { background-position: -420px -320px; } }
+
+/* ken-walking */
+.ken-walk { -webkit-animation: ken-walk steps(5) 0.5s infinite; -moz-animation: ken-walk steps(5) 0.5s infinite; -ms-animation: ken-walk steps(5) 0.5s infinite; animation: ken-walk steps(5) 0.5s infinite; }
+
+@-webkit-keyframes ken-walk { from { background-position: 0px -480px; }
+  to { background-position: -700px -480px; } }
+
+@-moz-keyframes ken-walk { from { background-position: 0px -480px; }
+  to { background-position: -700px -480px; } }
+
+@-ms-keyframes ken-walk { from { background-position: 0px -480px; }
+  to { background-position: -700px -480px; } }
+
+@keyframes ken-walk { from { background-position: 0px -480px; }
+  to { background-position: -700px -480px; } }
+
+/* ken-kick */
+.ken-kick { -webkit-animation: ken-kick steps(5) 0.5s infinite; -moz-animation: ken-kick steps(5) 0.5s infinite; -ms-animation: ken-kick steps(5) 0.5s infinite; animation: ken-kick steps(5) 0.5s infinite; }
+
+@-webkit-keyframes ken-kick { from { background-position: 0px -960px; }
+  to { background-position: -700px -960px; } }
+
+@-moz-keyframes ken-kick { from { background-position: 0px -960px; }
+  to { background-position: -700px -960px; } }
+
+@-ms-keyframes ken-kick { from { background-position: 0px -960px; }
+  to { background-position: -700px -960px; } }
+
+@keyframes ken-kick { from { background-position: 0px -960px; }
+  to { background-position: -700px -960px; } }
