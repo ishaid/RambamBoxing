@@ -1,12 +1,16 @@
 @import url(http://fonts.googleapis.com/css?family=Bangers);
 
-#header {
+.header {
   text-align: center;
   font-size: 85px;
   letter-spacing: 3px;
   margin-top: 50px;
   color: black;
   font-family: "Bangers", cursive, Arial;
+}
+
+.level-button {
+    margin: 2.5% 25% 2.5% 25%;
 }
 
 #footer {
@@ -21,31 +25,4 @@
   letter-spacing: 0.5px;
   color: black;
   font-family: "Bangers", cursive, Arial;
-}
-
-#desert {
-  position: absolute;
-    left: 50%;
-    top: 20%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    margin: auto;
-}
-
-#ship {
-  position: absolute;
-    left: 50%;
-    top: 25%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    margin: auto;
-}
-
-#hospital {
-  position: absolute;
-    left: 50%;
-    top: 30%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    margin: auto;
 }
